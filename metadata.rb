@@ -1,0 +1,10 @@
+name             'openntpd'
+maintainer       'Christopher Dickey'
+maintainer_email 'cdickey@wise0wl.io'
+license          'GPL v2'
+description      'Installs/Configures openntpd'
+long_description 'Installs/Configures openntpd'
+version          '0.1.0'
+
+depends 'tar'
+depends 'build-essential'

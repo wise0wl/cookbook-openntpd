@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: opscode-centos-6.5
+
+suites:
+  - name: default
+    run_list:
+      - recipe[openntpd::default]
+    attributes: {
+      dev_mode: true
+    }
