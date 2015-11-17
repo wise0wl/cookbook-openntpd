@@ -4,7 +4,7 @@ maintainer_email 'cdickey@wise0wl.io'
 license          'GPL v2'
 description      'Installs/Configures openntpd'
 long_description 'Installs/Configures openntpd'
-version          '0.1.01'
+version          '0.1.2'
 
 depends 'tar'
 depends 'build-essential'
