@@ -1,19 +1,19 @@
-<% @node.default['openntpd']['config']['listen_addresses'].each {|listen_address| %>
+<% @node['openntpd']['config']['listen_addresses'].each {|listen_address| %>
 listen on <%= listen_address %>
 <% } %>
 
-<% @node.default['openntpd']['config']['sensor_devices'].each {|sensor_device| %>
+<% @node['openntpd']['config']['sensor_devices'].each {|sensor_device| %>
 sensor <%= sensor_device %>
 <% } %>
 
-<% @node.default['openntpd']['config']['server_addresses'].each {|server_address| %>
+<% @node['openntpd']['config']['server_addresses'].each {|server_address| %>
 servers <%= server__address %>
 <% } %>
 
-<% @node.default['openntpd']['config']['server_pool_addresses'].each {|server_pool_address| %>
+<% @node['openntpd']['config']['server_pool_addresses'].each {|server_pool_address| %>
 servers <%= server_pool_address %>
 <% } %>
 
-<% @node.default['openntpd']['config']['constraint_urls'].each {|constraint_url| %>
+<% @node['openntpd']['config']['constraint_urls'].each {|constraint_url| %>
 constraints from "<%= constraint_url %>"
 <% } %>
